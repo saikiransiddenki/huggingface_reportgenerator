@@ -5,3 +5,17 @@ Dockerfile: Create a Dockerfile to define the container's environment and depend
 Python Script: Write a Python script to fetch data from the Hugging Face model hub and generate the report.
 
 Cron Job Configuration: Set up a cron job within the Docker container to periodically execute the Python script.
+
+## build the Docker image.
+
+```
+docker build -t huggingface-report .
+
+```
+
+## create a container
+
+```
+docker run -d --name huggingface-report-container huggingface-report
+
+```
