@@ -1,0 +1,2 @@
+# Run the report_generator.py script every hour
+0 * * * * root python /app/report_generator.py
